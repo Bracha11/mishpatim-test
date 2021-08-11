@@ -63,8 +63,10 @@ export class ExcelData {
 
 
     countOf(){
-
-        this.data
+      let  dataForGrafh: any;
+        this.data.array.forEach(element => {
+            
+        });
 
     }
 
