@@ -55,7 +55,7 @@ export class ExcelData {
          let result=  Check.compare(element.title, element.ref);
          element.result=result;
          return element;
-           //console.log('compare ',result,element.title, element.ref);
+          // console.log('compare ',result,element.title, element.ref);
         });
         console.log(this.data);
 

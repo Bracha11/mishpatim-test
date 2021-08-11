@@ -1,8 +1,8 @@
 
 <div class="card">
 <input type="file" class="form-control" style="display: inline-block;" (change)="incomingfile($event)" placeholder="Upload file" accept=".xlsx">
-<button type="button" class="btn btn-primary btn-lg btn-block" (click)="Upload()" >Upload</button>
-<button type="button" class="btn btn-primary btn-lg btn-block" (click)="download()" >download</button>
+<button type="button"  [disabled]="!file" class="btn btn-primary btn-lg btn-block" (click)="Upload()" >Upload</button>
+<button type="button" [disabled]="!isReady" class="btn btn-primary btn-lg btn-block" (click)="download()"  >download result</button>
 </div>
 
 <app-charts *ngIf="isReady"></app-charts>

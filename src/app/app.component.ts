@@ -28,9 +28,7 @@ export class AppComponent {
         this.data.loadExcel(fileReader).then(data => {
           this.data.checkData();
           this.isReady = true;
-          // console.log(data)
         });
-        //  this.data.loadExcel(fileReader);
       });
 
     }
