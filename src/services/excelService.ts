@@ -50,7 +50,7 @@ export class ExcelData {
 
     public checkData() {
 
-        this.data=this.data.filter(value => value.isTitleRefRelevant==1 &&  value.IsTitleRelevant==1 && value.isRefQK==1  );
+        this.data=this.data.filter(value => value.isTitleRefRelevant==1 &&  value.IsTitleRelevant==1   );
         this.data=this.data.map(element => {
          let result=  Check.compare(element.title, element.ref);
          element.result=result;
